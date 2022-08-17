@@ -3,9 +3,9 @@ pragma solidity 0.8.15;
 
 
 // Import Ownable.sol 
-import "openzeppelin-solidity/contracts/access/Ownable.sol";
+import '../node_modules/@openzeppelin/contracts/access/Ownable.sol';
 
-contract Fundraiser is Ownable{
+contract Fundraiser is Ownable {
 
     // event: Tells us when a donation is received
     // Marking the address as "index" allows the EVM to make it easier for

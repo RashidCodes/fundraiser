@@ -15,6 +15,7 @@ contract FundraiserFactory {
     event FundraiserCreated(Fundraiser indexed fundraiser, address indexed owner);
 
 
+    // create a fundraiser
     function createFundraiser(
         string memory name,
         string memory url,
@@ -39,6 +40,8 @@ contract FundraiserFactory {
         emit FundraiserCreated(fundraiser, msg.sender);
     }
 
+   
+    // get fundraisers
     function fundraisers(uint256 limit, uint256 offset) public view returns (Fundraiser[] memory coll){
 
         // you can use the require function to give errors more meaning
@@ -60,6 +63,8 @@ contract FundraiserFactory {
         return coll;
     }
 
+
+    // get the count of fundraisers
     function fundraisersCount() public view returns(uint256){
         return _fundraisers.length;
     }

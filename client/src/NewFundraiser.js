@@ -54,6 +54,8 @@ const NewFundraiser = () => {
 	const [ contract, setContract ] = useState(null);
 	const [ accounts, setAccounts ] = useState(null);
 	const [ web3, setWeb3 ] = useState(null)
+	const [ funds, setFunds ] = useState(null);
+
 
 	useEffect(() => {
 
@@ -71,6 +73,7 @@ const NewFundraiser = () => {
 				setWeb3(web3);
 				setContract(instance);
 				setAccounts(accounts);
+
 
 			} catch (err) {
 				alert (
@@ -93,8 +96,7 @@ const NewFundraiser = () => {
 			website,
 			image,
 			description,
-			address,
-			custodian
+			address
 		).send({ from: accounts[0] });
 
 
@@ -103,7 +105,7 @@ const NewFundraiser = () => {
 	}
 
 
-	return(
+	return (
 		<div>
 		   <h2>Create a New Fundraiser</h2>
 
@@ -164,19 +166,6 @@ const NewFundraiser = () => {
 		      placeHolder="Fundraiser Ethereum Address"
 		      margin='normal'
 		      onChange={(e) => setAddress(e.target.value)}
-		      variant="outlined"
-		      inputProps={{ 'aria-label': 'bare' }}
-		   />
-
-
-
-		   <label>Custodian</label>
-		   <TextField
-		      id='outlined-bare'
-		      className={classes.textField}
-		      placeHolder="Fundraiser Custodian"
-		      margin='normal'
-		      onChange={(e) => setCustodian(e.target.value)}
 		      variant="outlined"
 		      inputProps={{ 'aria-label': 'bare' }}
 		   />

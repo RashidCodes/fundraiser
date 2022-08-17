@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App';
 import Home from './Home';
 import NewFundraiser from './NewFundraiser';
+import TestComponent from './test';
 
 
 const root = ReactDOM.createRoot(
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
 	<BrowserRouter>
 	   <Routes>
-	      <Route path="/"  element={<App/>} />
+	      <Route path="/"  element={<TestComponent/>} />
 	      <Route path="/home" element={<Home/>} />
 	      <Route path="/new"  element={<NewFundraiser/>} />
 	   </Routes>
