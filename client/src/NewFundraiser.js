@@ -6,8 +6,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import getWeb3 from "./utils/getWeb3";
 import FactoryContract from "./contracts/FundraiserFactory.json";
-import Web3 from 'web3'
-
 
 
 const useStyles = makeStyles(theme => ({

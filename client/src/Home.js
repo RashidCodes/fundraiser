@@ -10,6 +10,7 @@ const Home = () => {
 
 	const [ contract, setContract ] = useState(null);
 	const [ accounts, setAccounts ] = useState(null);
+
 	const [ funds, setFunds ] = useState([]);
 
 
@@ -52,7 +53,7 @@ const Home = () => {
 			  key={fundraiser}
 			/>
 		  )
-		})
+		});
 	}
 
 

@@ -5,7 +5,7 @@ import FactoryContract from "./contracts/FundraiserFactory.json"
 import getWeb3 from "./utils/getWeb3.js"
 import "./App.css";
 import Home from "./Home.js"
-import NewFundraiser from "./NewFundraiser.js"
+import Receipts from './Receipts';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';

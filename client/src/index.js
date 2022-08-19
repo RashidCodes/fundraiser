@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App';
 import Home from './Home';
 import NewFundraiser from './NewFundraiser';
+import Receipts from './Receipts';
 import TestComponent from './test';
 
 
@@ -17,6 +18,7 @@ root.render(
 	      <Route path="/"  element={<TestComponent/>} />
 	      <Route path="/home" element={<Home/>} />
 	      <Route path="/new"  element={<NewFundraiser/>} />
+		  <Route path="/receipts" element={<Receipts />} />
 	   </Routes>
 	</BrowserRouter>
 );

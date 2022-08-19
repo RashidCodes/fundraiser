@@ -66,6 +66,8 @@ contract Fundraiser is Ownable {
         return _donations[msg.sender].length;
     }
 
+
+
     function donate() public payable {
         Donation memory donation = Donation({
             value: msg.value,
